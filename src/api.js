@@ -24,3 +24,9 @@ export const nowPlaying = () =>
 
 export const popular = () =>
   fetch(url("movie/popular"), options).then((res) => res.json());
+
+export const topRated = () =>
+  fetch(url("movie/top_rated"), options).then((res) => res.json());
+
+export const upComing = () =>
+  fetch(url("movie/upcoming"), options).then((res) => res.json());
