@@ -29,7 +29,7 @@ const Home = () => {
   console.log(topData);
   console.log(upData);
 
-  return <>Home</>;
+  return <></>;
 };
 
 export default Home;
