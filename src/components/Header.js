@@ -30,7 +30,7 @@ const Menu = styled.ul`
   li {
     margin-left: 150px;
     @media screen and(max-width: 650px) {
-      padding: 20px ${mainStyle.moPadding};
+      margin-left: 50px;
     }
     a {
       color: #fff;
