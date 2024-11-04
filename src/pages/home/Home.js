@@ -2,12 +2,7 @@ import { useEffect, useState } from "react";
 import { nowPlaying, popular, topRated, upComing } from "../../api";
 import Banner from "./components/Banner";
 import Loading from "../../components/Loading";
-import { Link } from "react-router-dom";
-import styled from "styled-components";
-import { mainStyle } from "../../GlobalStyled";
-import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
-import { W500_URL } from "../../constant/imgUrl";
 import Movies from "./components/Movies";
 
 const Home = () => {
@@ -20,6 +15,19 @@ const Home = () => {
   useEffect(() => {
     (async () => {
       try {
+        // const [now, pop, top, up] = await Promise.all([
+        //   nowPlaying(),
+        //   popular(),
+        //   topRated(),
+        //   upComing(),
+        // ]);
+
+        // setNowData(now.results);
+        // setPopData(pop.results);
+        // setTopData(top.results);
+        // setUpData(up.results);
+        // setIsLoading(false);
+
         const { results: now } = await nowPlaying();
         const { results: pop } = await popular();
         const { results: top } = await topRated();
@@ -39,25 +47,6 @@ const Home = () => {
   // console.log(popData);
   // console.log(topData);
   // console.log(upData);
-
-  const params = {
-    spaceBetween: 10,
-    slidesPerView: 3.3,
-    breakpoints: {
-      1024: {
-        spaceBetween: 20,
-        slidesPerView: 5.5,
-      },
-      640: {
-        spaceBetween: 15,
-        slidesPerView: 4.5,
-      },
-      320: {
-        spaceBetween: 10,
-        slidesPerView: 3.3,
-      },
-    },
-  };
 
   return (
     <div>
