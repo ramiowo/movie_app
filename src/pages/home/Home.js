@@ -4,6 +4,7 @@ import Banner from "./components/Banner";
 import Loading from "../../components/Loading";
 import "swiper/css";
 import Movies from "./components/Movies";
+import { Helmet } from "react-helmet-async";
 
 const Home = () => {
   const [nowData, setNowData] = useState();
@@ -54,6 +55,9 @@ const Home = () => {
         <Loading />
       ) : (
         <>
+          <Helmet>
+            <title>Home | RAMFLIEX</title>
+          </Helmet>
           {nowData && (
             <div>
               <Banner data={nowData} />
