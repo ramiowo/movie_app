@@ -12,7 +12,7 @@ const Container = styled.header`
   top: 0;
   left: 0;
   width: 100%;
-  @media screen and(max-width: 650px) {
+  @media screen and (max-width: 650px) {
     padding: 20px ${mainStyle.moPadding};
   }
   z-index: 10;
@@ -30,7 +30,7 @@ const Menu = styled.ul`
   display: flex;
   li {
     margin-left: 150px;
-    @media screen and(max-width: 650px) {
+    @media screen and (max-width: 650px) {
       margin-left: 50px;
     }
     a {
