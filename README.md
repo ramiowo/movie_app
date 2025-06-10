@@ -1,21 +1,32 @@
-# Work List
+# 시네
 
-- [x] Router 설정
-- [x] 각 폴더, 파일 등 구성
-- [x] api 설정
-- [x] Loading, Header, Footer 글로벌 컴포넌트 구성
-- [x] 웹 폰트 설정
-- [x] 각 페이지 ui 작업 및 반응형
-- [x] Helmet
-- [x] Header Scroll Event
-- [] Deploy
+## 프로젝트 github URL - https://ramiowo.github.io/movie_app_CINEPICK/
 
-# 설치 항목
+## 목적
 
-- [x] npm i react-router-dom
-- [x] npm i styled-components
-- [x] npm i styled-reset
-- [x] npm i react-hook-form
-- [x] swiper
-- [x] font-awesome
-- [x] helmet-async
+자신이 보고싶은 영화를 검색하여 정보를 확인할 수 있고
+최신영화, 추천 영화 등 쉬운 접근성으로 추천 받을수 있으며,
+상영시간, 평점 , 줄거리 등 영화에 대한 정보를 쉽고 빠르게 얻을수 있다.
+
+## 기술 스택
+
+- JS
+- React
+- Node.js
+- Git
+- GitHub
+- CSS
+- HTML
+
+## 개발 기간
+
+11월 7일 - 11월 12일 (6일)
+
+## 구현 기능
+
+인기영화,추천영화,현재상영작,개봉예정영화 콘텐츠 / 영화 검색 / 장르 선택 / 예고편 / top버튼
+
+## 지원 디바이스
+
+- PC
+- mo
